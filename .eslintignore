@@ -2,4 +2,5 @@
 *.css
 *.json
 *.less
+/storybook-static
 src/process-env.d.ts
