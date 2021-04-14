@@ -28,6 +28,12 @@
       ],
       "@context": [
         "./src/context"
+      ],
+      "@parts/*": [
+        "./src/parts/*"
+      ],
+      "@parts": [
+        "./src/parts"
       ]
     }
   }

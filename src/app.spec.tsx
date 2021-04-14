@@ -1,6 +1,8 @@
 import { render } from '@testing-library/react';
 import { MemoryRouter as Router } from 'react-router-dom';
 
+import { AppProvider } from '@context/app/app.provider';
+
 import { App } from './app';
 
 const wrapComponent = (props = {}) => {
@@ -8,7 +10,9 @@ const wrapComponent = (props = {}) => {
 
   return render(
     <Router>
-      <App {...defaultProps} {...props} />
+      <AppProvider>
+        <App {...defaultProps} {...props} />
+      </AppProvider>
     </Router>,
   );
 };

@@ -28,7 +28,5 @@
     "src",
     ".eslintrc"
   ],
-  "exclude": [
-    "src/**/*.stories.tsx"
-  ]
+  "exclude": []
 }
