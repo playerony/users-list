@@ -2,10 +2,33 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["./src/pages/*"],
-      "@pages": ["./src/pages"],
-      "@router/*": ["./src/router/*"],
-      "@router": ["./src/router"]
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@pages": [
+        "./src/pages"
+      ],
+      "@router/*": [
+        "./src/router/*"
+      ],
+      "@router": [
+        "./src/router"
+      ],
+      "@constants": [
+        "./src/constants"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@styles": [
+        "./src/styles"
+      ],
+      "@context/*": [
+        "./src/context/*"
+      ],
+      "@context": [
+        "./src/context"
+      ]
     }
   }
 }
