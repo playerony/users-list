@@ -10,7 +10,7 @@ export interface RouteConfig {
 
 export enum Routes {
   DASHBOARD = '/',
-  NOT_FOUND = '/403',
+  NOT_FOUND = '/404',
   ANY = '*',
 }
 
