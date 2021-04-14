@@ -16,6 +16,11 @@ module.exports = {
     '@pages': '<rootDir>/src/pages/',
     '@router/(.*)': '<rootDir>/src/router/$1',
     '@router': '<rootDir>/src/router',
+    '@context/(.*)': '<rootDir>/src/context/$1',
+    '@context': '<rootDir>/src/context',
+    '@styles/(.*)': '<rootDir>/src/styles/$1',
+    '@styles': '<rootDir>/src/styles',
+    '@constants': '<rootDir>/src/constants',
   },
   modulePathIgnorePatterns: ['node_modules'],
 };
