@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "airbnb-typescript"
-  ],
+  "extends": ["airbnb-typescript"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -10,16 +8,13 @@
     "node": true,
     "jest": true
   },
-  "plugins": [
-    "react-hooks"
-  ],
+  "plugins": ["react-hooks"],
   "overrides": [
     {
-      "files": [
-        "*.tsx",
-        "*.ts"
-      ],
+      "files": ["*.tsx", "*.ts"],
       "rules": {
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
         "import/prefer-default-export": "off",
         "import/order": "off",
         "implicit-arrow-linebreak": "off",
