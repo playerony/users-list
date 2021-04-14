@@ -20,6 +20,8 @@ export type DeviceBreakpoint = 'large' | 'medium' | 'small' | 'mobile' | 'xmobil
 
 export type Color = 'gray' | 'black' | 'white' | 'borders' | 'background' | 'fontPrimary';
 
+export type DeviceBreakpointObject = { [key in DeviceBreakpoint]: number };
+
 export interface Theme {
   color: { [key in Color]: string };
   radius: { [key in Radius]: string };
@@ -27,8 +29,16 @@ export interface Theme {
   fontSize: { [key in FontSize]: string };
   fontFamily: { [key in FontFamily]: string };
   fontWeight: { [key in FontWeight]: number };
-  deviceBreakpoint: { [key in DeviceBreakpoint]: number };
+  deviceBreakpoint: DeviceBreakpointObject;
 }
+
+export const deviceBreakpoint: DeviceBreakpointObject = {
+  large: LARGE_SCREEN_BREAKPOINT,
+  small: SMALL_SCREEN_BREAKPOINT,
+  medium: MEDIUM_SCREEN_BREAKPOINT,
+  mobile: MOBILE_SCREEN_BREAKPOINT,
+  xmobile: XMOBILE_SCREEN_BREAKPOINT,
+};
 
 export const theme: Theme = {
   fontFamily: {
@@ -49,9 +59,9 @@ export const theme: Theme = {
   },
   fontSize: {
     xsmall: '12px',
-    small: '14px',
-    regular: '16px',
-    medium: '20px',
+    small: '16px',
+    regular: '18px',
+    medium: '24px',
     big: '34px',
     large: '48px',
   },
@@ -67,11 +77,5 @@ export const theme: Theme = {
     base: '40px',
     large: '60px',
   },
-  deviceBreakpoint: {
-    large: LARGE_SCREEN_BREAKPOINT,
-    small: SMALL_SCREEN_BREAKPOINT,
-    medium: MEDIUM_SCREEN_BREAKPOINT,
-    mobile: MOBILE_SCREEN_BREAKPOINT,
-    xmobile: XMOBILE_SCREEN_BREAKPOINT,
-  },
+  deviceBreakpoint,
 };

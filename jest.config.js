@@ -21,6 +21,8 @@ module.exports = {
     '@styles/(.*)': '<rootDir>/src/styles/$1',
     '@styles': '<rootDir>/src/styles',
     '@constants': '<rootDir>/src/constants',
+    '@parts/(.*)': '<rootDir>/src/parts/$1',
+    '@parts': '<rootDir>/src/parts',
   },
   modulePathIgnorePatterns: ['node_modules'],
 };
