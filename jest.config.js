@@ -23,6 +23,8 @@ module.exports = {
     '@constants': '<rootDir>/src/constants',
     '@parts/(.*)': '<rootDir>/src/parts/$1',
     '@parts': '<rootDir>/src/parts',
+    '@layout/(.*)': '<rootDir>/src/layout/$1',
+    '@layout': '<rootDir>/src/layout',
   },
   modulePathIgnorePatterns: ['node_modules'],
 };
