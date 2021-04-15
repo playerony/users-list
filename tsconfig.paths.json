@@ -40,6 +40,24 @@
       ],
       "@layout": [
         "./src/layout"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@utils": [
+        "./src/utils"
+      ],
+      "@hooks/*": [
+        "./src/utils/hooks/*"
+      ],
+      "@hooks": [
+        "./src/utils/hooks"
+      ],
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@interfaces": [
+        "./src/interfaces"
       ]
     }
   }
