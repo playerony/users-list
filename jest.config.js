@@ -25,6 +25,12 @@ module.exports = {
     '@parts': '<rootDir>/src/parts',
     '@layout/(.*)': '<rootDir>/src/layout/$1',
     '@layout': '<rootDir>/src/layout',
+    '@utils/(.*)': '<rootDir>/src/utils/$1',
+    '@utils': '<rootDir>/src/utils',
+    '@hooks/(.*)': '<rootDir>/src/utils/hooks/$1',
+    '@hooks': '<rootDir>/src/utils/hooks',
+    '@interfaces/(.*)': '<rootDir>/src/interfaces/$1',
+    '@interfaces': '<rootDir>/src/interfaces',
   },
   modulePathIgnorePatterns: ['node_modules'],
 };

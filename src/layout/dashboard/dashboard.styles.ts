@@ -6,6 +6,6 @@ export const StyledContentWrapper = styled.div`
   text-align: center;
 
   & > :not(:first-child) {
-    margin-top: ${({ theme }) => theme.spacing.small};
+    margin-top: ${({ theme }) => theme.spacing.medium};
   }
 `;
