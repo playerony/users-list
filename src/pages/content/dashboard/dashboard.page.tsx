@@ -1,3 +1,3 @@
-import { BigHeading } from '@parts/big-heading/big-heading.component';
+import { DashboardLayout } from '@layout/dashboard/dashboard.layout';
 
-export const DashboardPage = (): JSX.Element => <BigHeading>Users list</BigHeading>;
+export const DashboardPage = (): JSX.Element => <DashboardLayout />;

@@ -8,6 +8,7 @@ module.exports = ({ config }) => {
     '@pages': path.resolve(__dirname, '..', 'src', 'pages'),
     '@styles': path.resolve(__dirname, '..', 'src', 'styles'),
     '@router': path.resolve(__dirname, '..', 'src', 'router'),
+    '@layout': path.resolve(__dirname, '..', 'src', 'layout'),
     '@context': path.resolve(__dirname, '..', 'src', 'context'),
     '@constants': path.resolve(__dirname, '..', 'src', 'constants'),
   };
