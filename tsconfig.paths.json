@@ -58,7 +58,16 @@
       ],
       "@interfaces": [
         "./src/interfaces"
-      ]
+      ],
+      "@functions/*": [
+        "./src/utils/functions/*"
+      ],
+      "@functions": [
+        "./src/utils/functions"
+      ],
+      "@types": [
+        "./src/types"
+      ],
     }
   }
 }
