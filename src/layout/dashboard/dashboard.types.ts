@@ -1,5 +1,5 @@
-import { User } from '@interfaces';
+import { ReactNode } from 'react';
 
 export interface DashboardLayoutProps {
-  users: User[];
+  children: ReactNode;
 }

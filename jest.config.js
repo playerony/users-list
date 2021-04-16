@@ -31,6 +31,8 @@ module.exports = {
     '@hooks': '<rootDir>/src/utils/hooks',
     '@interfaces/(.*)': '<rootDir>/src/interfaces/$1',
     '@interfaces': '<rootDir>/src/interfaces',
+    '@functions/(.*)': '<rootDir>/src/utils/functions/$1',
+    '@functions': '<rootDir>/src/utils/functions'
   },
   modulePathIgnorePatterns: ['node_modules'],
 };

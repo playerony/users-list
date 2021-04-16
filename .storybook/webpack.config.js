@@ -14,6 +14,7 @@ module.exports = ({ config }) => {
     '@constants': path.resolve(__dirname, '..', 'src', 'constants'),
     '@hooks': path.resolve(__dirname, '..', 'src', 'utils', 'hooks'),
     '@interfaces': path.resolve(__dirname, '..', 'src', 'interfaces'),
+    '@functions': path.resolve(__dirname, '..', 'src', 'utils', 'functions'),
   };
 
   return config;
