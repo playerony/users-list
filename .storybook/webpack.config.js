@@ -5,7 +5,6 @@ module.exports = ({ config }) => {
 
   config.resolve.alias = {
     '@parts': path.resolve(__dirname, '..', 'src', 'parts'),
-    '@types': path.resolve(__dirname, '..', 'src', 'types'),
     '@pages': path.resolve(__dirname, '..', 'src', 'pages'),
     '@utils': path.resolve(__dirname, '..', 'src', 'utils'),
     '@styles': path.resolve(__dirname, '..', 'src', 'styles'),

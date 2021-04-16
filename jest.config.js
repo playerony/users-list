@@ -32,8 +32,7 @@ module.exports = {
     '@interfaces/(.*)': '<rootDir>/src/interfaces/$1',
     '@interfaces': '<rootDir>/src/interfaces',
     '@functions/(.*)': '<rootDir>/src/utils/functions/$1',
-    '@functions': '<rootDir>/src/utils/functions',
-    '@types': '<rootDir>/src/types',
+    '@functions': '<rootDir>/src/utils/functions'
   },
   modulePathIgnorePatterns: ['node_modules'],
 };
