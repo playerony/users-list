@@ -13,6 +13,9 @@ describe('compareWordsWithoutAccents Function', () => {
 
   it('should compare same words with same accents', () => {
     expect(compareWordsWithoutAccents('A. Ashanti Mineração', 'A. Ashanti Mineração')).toBeTruthy();
+    expect(
+      compareWordsWithoutAccents('   A. Ashanti Mineração     ', '     Mineração    '),
+    ).toBeTruthy();
   });
 
   it('should compare word included in with same different accents', () => {

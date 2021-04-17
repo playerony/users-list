@@ -6,7 +6,7 @@ interface StyledWrapperProps {
 
 export const StyledWrapper = styled.ul<StyledWrapperProps>`
   text-align: left;
-  min-height: 400px;
+  min-height: 250px;
   list-style-type: none;
   padding-left: ${({ theme }) => theme.spacing.small};
 

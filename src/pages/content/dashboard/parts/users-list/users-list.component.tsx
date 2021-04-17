@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Record } from './parts/record/record.component';
+import { Record } from './parts';
 
 import { compareWordsWithoutAccents } from '@functions';
 
 import { UsersListProps } from './users-list.types';
 import { StyledWrapper } from './users-list.styles';
 
-export const UsersList = ({ users, searchFor }: UsersListProps): JSX.Element => {
-  const filteredUsers = users.filter((user) => compareWordsWithoutAccents(user.name, searchFor));
+export const UsersList = ({ users, searchTerm }: UsersListProps): JSX.Element => {
+  const filteredUsers = users.filter((user) => compareWordsWithoutAccents(user.name, searchTerm));
 
   const noData = !users.length;
   const noFilteredRecords = !filteredUsers.length;

@@ -4,7 +4,7 @@ import { deviceBreakpoint, DeviceBreakpointObject } from './theme-config';
 
 export const respondTo = (Object.keys(deviceBreakpoint) as (keyof DeviceBreakpointObject)[]).reduce<
   {
-    [key in keyof DeviceBreakpointObject]:(
+    [key in keyof DeviceBreakpointObject]: (
       style: TemplateStringsArray,
       ...args: Array<any>
     ) => FlattenSimpleInterpolation;
