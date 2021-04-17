@@ -64,7 +64,13 @@
       ],
       "@functions": [
         "./src/utils/functions"
-      ]
+      ],
+      "@mocks/*": [
+        "./src/__mocks__/*"
+      ],
+      "@mocks": [
+        "./src/__mocks__"
+      ],
     }
   }
 }

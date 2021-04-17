@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-import { AppProvider } from '@context/app/app.provider';
+import { AppProvider } from '@context';
 
 import { App } from './app';
 import reportWebVitals from './reportWebVitals';

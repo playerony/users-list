@@ -1,5 +1,4 @@
-import { CenterBlockLayout } from '@layout/center-block/center-block.layout';
-
+import { CenterBlockLayout } from '@layout';
 import { StyledRectangle } from './loading-page.styles';
 
 export const LoadingPage = (): JSX.Element => (

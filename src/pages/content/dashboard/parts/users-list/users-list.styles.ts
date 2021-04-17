@@ -10,7 +10,9 @@ export const StyledWrapper = styled.ul<StyledWrapperProps>`
   list-style-type: none;
   padding-left: ${({ theme }) => theme.spacing.small};
 
-  ${({ centerContent }) => centerContent && css`
-    text-align: center;
-  `}
+  ${({ centerContent }) =>
+    centerContent &&
+    css`
+      text-align: center;
+    `}
 `;

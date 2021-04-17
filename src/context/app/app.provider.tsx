@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { ThemeProvider } from '@context/theme/theme.provider';
+import { ThemeProvider } from '@context';
 
 interface Props {
   children: ReactNode;

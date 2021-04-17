@@ -32,7 +32,9 @@ module.exports = {
     '@interfaces/(.*)': '<rootDir>/src/interfaces/$1',
     '@interfaces': '<rootDir>/src/interfaces',
     '@functions/(.*)': '<rootDir>/src/utils/functions/$1',
-    '@functions': '<rootDir>/src/utils/functions'
+    '@functions': '<rootDir>/src/utils/functions',
+    '@mocks/(.*)': '<rootDir>/src/__mocks__/$1',
+    '@mocks': '<rootDir>/src/__mocks__',
   },
   modulePathIgnorePatterns: ['node_modules'],
 };

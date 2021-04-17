@@ -1,6 +1,5 @@
-import { BigHeading } from '@parts/big-heading/big-heading.component';
-
-import { CenterBlockLayout } from '@layout/center-block/center-block.layout';
+import { BigHeading } from '@parts';
+import { CenterBlockLayout } from '@layout';
 
 export const NotFoundPage = (): JSX.Element => (
   <CenterBlockLayout>

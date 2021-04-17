@@ -11,6 +11,7 @@ module.exports = ({ config }) => {
     '@router': path.resolve(__dirname, '..', 'src', 'router'),
     '@layout': path.resolve(__dirname, '..', 'src', 'layout'),
     '@context': path.resolve(__dirname, '..', 'src', 'context'),
+    '@mocks': path.resolve(__dirname, '..', 'src', '__mocks__'),
     '@constants': path.resolve(__dirname, '..', 'src', 'constants'),
     '@hooks': path.resolve(__dirname, '..', 'src', 'utils', 'hooks'),
     '@interfaces': path.resolve(__dirname, '..', 'src', 'interfaces'),
