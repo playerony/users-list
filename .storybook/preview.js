@@ -1,4 +1,4 @@
-import { AppProvider } from '@context/app/app.provider';
+import { AppProvider } from '@context';
 
 export const decorators = [
   (Story) => (

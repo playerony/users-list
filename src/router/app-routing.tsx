@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { AppRouteConfig, Routes } from './route.config';
 
-export const AppRoutes = () => (
+export const AppRoutes = (): JSX.Element => (
   <Switch>
     {React.Children.toArray(
       Object.keys(AppRouteConfig).map((path) => {
