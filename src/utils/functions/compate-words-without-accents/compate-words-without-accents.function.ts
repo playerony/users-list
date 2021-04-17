@@ -8,8 +8,11 @@ export const compareWordsWithoutAccents = (wordA: string, wordB: string): boolea
   const valueALowerCase = valueA.toLowerCase();
   const valueBLowerCase = valueB.toLowerCase();
 
-  const valueAWithoutAccent = removeWordAccent(valueALowerCase);
-  const valueBWithoutAccent = removeWordAccent(valueBLowerCase);
+  const valueATrim = valueALowerCase.trim();
+  const valueBTrim = valueBLowerCase.trim();
+
+  const valueAWithoutAccent = removeWordAccent(valueATrim);
+  const valueBWithoutAccent = removeWordAccent(valueBTrim);
 
   return valueAWithoutAccent.includes(valueBWithoutAccent);
 };

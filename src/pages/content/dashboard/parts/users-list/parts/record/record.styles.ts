@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.li`
+  list-style-type: none;
   color: ${({ theme }) => theme.color.black};
   font-size: ${({ theme }) => theme.fontSize.small};
   padding-top: ${({ theme }) => theme.spacing.xsmall};
