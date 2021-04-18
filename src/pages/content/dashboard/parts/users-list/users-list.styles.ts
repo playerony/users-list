@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { respondTo } from '@styles/mixins';
+
 interface StyledWrapperProps {
   centerContent: boolean;
 }
@@ -15,4 +17,9 @@ export const StyledWrapper = styled.ul<StyledWrapperProps>`
     css`
       text-align: center;
     `}
+
+  ${({ theme }) => respondTo.xmobile`
+    min-height: 210px;
+    padding-left: ${theme.spacing.xsmall};
+  `}
 `;

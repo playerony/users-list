@@ -6,7 +6,7 @@ export const StyledHeading = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.large};
   font-weight: ${({ theme }) => theme.fontWeight.normal};
 
-  ${({ theme }) => respondTo.mobile`
+  ${({ theme }) => respondTo.xmobile`
     font-size: ${theme.fontSize.big};
   `}
 `;
