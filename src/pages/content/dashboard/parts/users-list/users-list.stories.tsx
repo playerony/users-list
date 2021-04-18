@@ -4,6 +4,6 @@ import { UsersList } from './users-list.component';
 
 import { usersListMock } from '@mocks';
 
-storiesOf('pages/Dashboard/UsersList', module).add('default', () => (
+storiesOf('Design System/Pages/Dashboard/Parts/UsersList', module).add('default', () => (
   <UsersList users={usersListMock} searchTerm="" />
 ));
