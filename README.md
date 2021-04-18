@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# 🔥 users-list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Lint](https://github.com/playerony/users-list/workflows/Lint/badge.svg)
+![Test](https://github.com/playerony/users-list/workflows/Test/badge.svg)
+![Build](https://github.com/playerony/users-list/workflows/Build/badge.svg)
+![Typecheck](https://github.com/playerony/users-list/workflows/Typecheck/badge.svg)
 
-## Available Scripts
+This is a simple app which fetches and display users list.
+App available right here: https://witty-ocean-039ca0b03.azurestaticapps.net
 
-In the project directory, you can run:
+## 📖Table of Contents
 
-### `yarn start`
+- 👀 [What's inside](#whats-inside)
+- ⚠️ [Prerequisites](#%EF%B8%8F-prerequisites)
+- 📜 [Scripts](#scripts)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 👀What's inside:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Simple app which fetches and display users list written with React.js and Typescript.
 
-### `yarn test`
+## ⚠️ Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You need to have installed the following software:
 
-### `yarn build`
+- [nodejs](https://nodejs.org/en/) (>=14.15.0)
+- [npm](https://npmjs.com/) (>= 6.14.0)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📜Scripts:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `storybook` - Run storybook.
+- `start` - Run application in development mode.
+- `reinstall-deps` - Run will remove all dependencies and reinstall them.
 
-### `yarn eject`
+### Build
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `build` - Build for production a ready application.
+- `build-storybook` - Build a ready storybook.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `e2e` - Run e2e tests
+- `test` - Run tests
+- `test:ci` - Run tests in CI mode
+- `test:watch` - Run tests in watch mode
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Analyze
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `lint` - Run `eslint`. Output any errors 🚨
+- `lint:fix` - Run `eslint`. Fix any lint errors 🚨
+- `typecheck` - Run `tsc`. Output any errors 🚨
+- `format` - Run `prettier` to format all the files.
