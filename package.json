@@ -14,7 +14,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "lint:fix": "eslint --fix --ext .ts \"src/**/*\"",
     "reinstall-deps": "bash ./scripts/reinstall-deps.sh",
-    "e2e": "npx cypress run --spec './cypress/integration/**/*.spec.*'",
+    "test:e2e": "npx cypress run --spec './cypress/integration/**/*.spec.*'",
     "test": "NODE_ENV=test jest --config ./jest.config.js --env=jest-environment-jsdom-sixteen",
     "test:watch": "NODE_ENV=test jest --config ./jest.config.js --watch --env=jest-environment-jsdom-sixteen",
     "test:ci": "NODE_ENV=test jest --config ./jest.config.js --ci --coverage --forceExit --env=jest-environment-jsdom-sixteen"

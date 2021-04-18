@@ -40,14 +40,14 @@ You need to have installed the following software:
 
 ### Test
 
-- `e2e` - Run e2e tests
-- `test` - Run tests
-- `test:ci` - Run tests in CI mode
-- `test:watch` - Run tests in watch mode
+- `test` - Run tests.
+- `test:e2e` - Run e2e tests.
+- `test:ci` - Run tests in CI mode.
+- `test:watch` - Run tests in watch mode.
 
 ### Analyze
 
-- `lint` - Run `eslint`. Output any errors 🚨
-- `lint:fix` - Run `eslint`. Fix any lint errors 🚨
-- `typecheck` - Run `tsc`. Output any errors 🚨
+- `lint` - Run `eslint`. Output any errors 🚨.
+- `lint:fix` - Run `eslint`. Fix any lint errors 🚨.
+- `typecheck` - Run `tsc`. Output any errors 🚨.
 - `format` - Run `prettier` to format all the files.
