@@ -5,15 +5,14 @@ import { axiosInstance } from '../../axios/axios-instance';
 
 import { State } from './use-get.types';
 
-export const useGet = <R = any>(url: string = '') => {
-  const [requestUrl, setRequestUrl] = useState<string>(url);
-  const [state, setState] = useState<State<R>>({
+export const useGet = <ResultsType>(url: string = ''): State<ResultsType> => {
+  const [state, setState] = useState<State<ResultsType>>({
     results: null,
     hasError: false,
     isLoading: false,
   });
 
-  const updateState = (newState: Partial<State<R>>) =>
+  const updateState = (newState: Partial<State<ResultsType>>): void =>
     setState((prevState) => ({
       ...prevState,
       ...newState,
@@ -23,14 +22,14 @@ export const useGet = <R = any>(url: string = '') => {
     let didCancel = false;
 
     const get = async () => {
-      if (requestUrl) {
+      if (url) {
         updateState({
           isLoading: true,
           hasError: false,
         });
 
         try {
-          const response: AxiosResponse<R> = await axiosInstance.get(requestUrl);
+          const response: AxiosResponse<ResultsType> = await axiosInstance.get(url);
 
           if (!didCancel && response?.status === 200) {
             updateState({
@@ -39,7 +38,7 @@ export const useGet = <R = any>(url: string = '') => {
               results: response.data,
             });
           } else {
-            throw new Error('Status not 200');
+            throw new Error('Status is not 200');
           }
         } catch (error) {
           if (!didCancel) {
@@ -57,7 +56,7 @@ export const useGet = <R = any>(url: string = '') => {
     return () => {
       didCancel = true;
     };
-  }, [requestUrl]);
+  }, [url]);
 
-  return [{ state, setRequestUrl }];
+  return state;
 };

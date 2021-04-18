@@ -1,5 +1,5 @@
-export interface State<R> {
-  results: R | null;
+export interface State<ResultsType> {
   hasError: boolean;
   isLoading: boolean;
+  results: ResultsType | null;
 }

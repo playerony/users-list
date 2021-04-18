@@ -9,11 +9,7 @@ import { User } from '@interfaces';
 import { useGet, useDebounce } from '@hooks';
 
 export const DashboardPage = (): JSX.Element => {
-  const [
-    {
-      state: { isLoading, hasError, results: users },
-    },
-  ] = useGet<User[]>('/users');
+  const { isLoading, hasError, results: users } = useGet<User[]>('/users');
 
   const [searchTerm, setSearchTerm] = useState<string>('');
 
