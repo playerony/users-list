@@ -1,29 +1,42 @@
 # 🔥 users-list
 
-![Lint](https://github.com/playerony/users-list/workflows/Lint/badge.svg)
-![Test](https://github.com/playerony/users-list/workflows/Test/badge.svg)
-![Build](https://github.com/playerony/users-list/workflows/Build/badge.svg)
-![Typecheck](https://github.com/playerony/users-list/workflows/Typecheck/badge.svg)
+![Lint Check](https://github.com/playerony/users-list/workflows/Lint/badge.svg)
+![Test Check](https://github.com/playerony/users-list/workflows/Test/badge.svg)
+![Production Build](https://github.com/playerony/users-list/workflows/Build/badge.svg)
+![Typecheck Check](https://github.com/playerony/users-list/workflows/Typecheck/badge.svg)
 
 This is a simple app which fetches and display users list.
 App available right here: https://witty-ocean-039ca0b03.azurestaticapps.net
 
 ## 📖Table of Contents
 
-- 👀 [What's inside](#whats-inside)
-- ⚠️ [Prerequisites](#%EF%B8%8F-prerequisites)
-- 📜 [Scripts](#scripts)
+- [✨ Getting started](#%e2%9c%a8-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Bootstrap](#bootstrap)
+- [📜 Scripts](#%f0%9f%93%9c-scripts)
+  - [Build](#build)
+  - [Test](#test)
+  - [Analyze](#analyze)
+  - [Development](#development)
+- [📚 Documentation](#%f0%9f%93%9a-documentation)
+  - [Commit Message Guideline](#commit-message-guideline)
 
-## 👀What's inside:
+## ✨ Getting started
 
-Simple app which fetches and display users list written with React.js and Typescript.
-
-## ⚠️ Prerequisites
+### Prerequisites
 
 You need to have installed the following software:
 
 - [nodejs](https://nodejs.org/en/) (>=14.15.0)
 - [npm](https://npmjs.com/) (>= 6.14.0)
+
+### Bootstrap
+
+```bash
+  git clone git@github.com:playerony/users-list.git
+  cd users-list
+  npm i
+```
 
 ## 📜Scripts:
 
@@ -40,14 +53,21 @@ You need to have installed the following software:
 
 ### Test
 
-- `e2e` - Run e2e tests
-- `test` - Run tests
-- `test:ci` - Run tests in CI mode
-- `test:watch` - Run tests in watch mode
+- `test` - Run tests.
+- `test:e2e` - Run e2e tests.
+- `test:ci` - Run tests in CI mode.
+- `test:watch` - Run tests in watch mode.
 
 ### Analyze
 
-- `lint` - Run `eslint`. Output any errors 🚨
-- `lint:fix` - Run `eslint`. Fix any lint errors 🚨
-- `typecheck` - Run `tsc`. Output any errors 🚨
+- `lint` - Run `eslint`. Output any errors 🚨.
+- `lint:fix` - Run `eslint`. Fix any lint errors 🚨.
+- `typecheck` - Run `tsc`. Output any errors 🚨.
 - `format` - Run `prettier` to format all the files.
+
+## 📚 Documentation
+
+### Commit Message Guideline
+
+- For easier commit type recognition commit messages are prefixed with an emoji
+- See available [commit-emojis](https://github.com/sebald/commit-emojis#available-emojis)

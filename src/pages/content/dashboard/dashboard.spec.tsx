@@ -62,7 +62,7 @@ describe('<DashboardPage /> Component', () => {
     });
   });
 
-  it('should catch API call error', async () => {
+  it('should catch error response', async () => {
     axiosMock.onGet('/users').networkError();
 
     wrapComponent();
