@@ -1,9 +1,9 @@
 import { FormEvent, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 
+import { UsersList } from './parts';
 import { DashboardLayout } from '@layout';
 import { Input, BigHeading, LoadingPage } from '@parts';
-import { UsersList } from './parts/users-list/users-list.component';
 
 import { User } from '@interfaces';
 import { useGet, useDebounce } from '@hooks';

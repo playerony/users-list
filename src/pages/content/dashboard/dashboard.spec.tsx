@@ -1,8 +1,12 @@
+import MockAdapter from 'axios-mock-adapter';
 import userEvent from '@testing-library/user-event';
 import { render, waitFor } from '@testing-library/react';
 
 import { AppProvider } from '@context';
 import { DashboardPage } from './dashboard.page';
+
+import { usersListMock } from '@mocks';
+import { axiosInstance } from '@utils/axios/axios-instance';
 
 const wrapComponent = () =>
   render(
@@ -12,6 +16,12 @@ const wrapComponent = () =>
   );
 
 describe('<DashboardPage /> Component', () => {
+  const axiosMock = new MockAdapter(axiosInstance);
+
+  beforeAll(() => {
+    axiosMock.onGet('/users').reply(200, usersListMock);
+  });
+
   it('should fetch users list', async () => {
     const utils = wrapComponent();
 

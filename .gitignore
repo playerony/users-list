@@ -24,3 +24,10 @@ yarn-error.log*
 
 # storybook
 /storybook-static
+
+# cypress
+cypress/videos
+cypress/downloads
+cypress/screenshots
+cypress/integration/examples
+cypress/fixtures/example.json
