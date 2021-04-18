@@ -1,4 +1,4 @@
-import { compareWordsWithoutAccents } from './compate-words-without-accents.function';
+import { compareWordsWithoutAccents } from './compare-words-without-accents.function';
 
 describe('compareWordsWithoutAccents Function', () => {
   it('should pass when at least one of values is a falsy one', () => {
