@@ -28,7 +28,7 @@ export const DashboardPage = (): JSX.Element => {
 
   return (
     <DashboardLayout>
-      <BigHeading>users list</BigHeading>
+      <BigHeading>Users list</BigHeading>
       <Input onChange={onInputChange} placeholder="Search by user name..." />
       <UsersList users={users || []} searchTerm={debouncedSearchTerm} />
     </DashboardLayout>

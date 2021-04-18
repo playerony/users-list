@@ -1,19 +1,19 @@
 describe('DashboardPage', () => {
   it('should contain proper header', () => {
     cy.visit('/');
-    cy.contains('users list');
+    cy.contains('Users list');
   });
 
   it('should fetch and render users list', () => {
     cy.visit('/');
-    cy.contains('users list');
+    cy.contains('Users list');
 
     cy.get('ul').find('li').should('have.length', 10);
   });
 
   it('should filter users list by name', () => {
     cy.visit('/');
-    cy.contains('users list');
+    cy.contains('Users list');
 
     cy.get('input').type('    ńa    ');
 
